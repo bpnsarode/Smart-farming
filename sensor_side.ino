@@ -5,10 +5,9 @@
 #include <SPI.h>
 
 
-// The DHT data line is connected to pin 2 on the Arduino
+// The DHT data line is connected to pin 3 on the Arduino
 #define DHTPIN 3
 
-// Leave as is if you're using the DHT22. Change if not.
 #define DHTTYPE DHT11   // DHT 11 
 //#define DHTTYPE DHT22   // DHT 22  (AM2302)
 //#define DHTTYPE DHT21   // DHT 21 (AM2301)
@@ -26,7 +25,7 @@ const uint16_t parent_node = 0;
 // Time between packets (in ms)
 const unsigned long interval = 2000;
 
-// Structure of our message
+// Structure of message
 struct message_t {
   float temperature;
   float humidity;
